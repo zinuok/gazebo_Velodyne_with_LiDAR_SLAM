@@ -14,46 +14,16 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● aliengo_sdk
 -->
 ### 1. Install
+####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR sensor: Velodyne
+####    &nbsp;&nbsp;&nbsp;&nbsp;● robot model: champ-anymal_b
+####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: LeGO-LOAM
 ### 2. Applying Model
-####    &nbsp;&nbsp;&nbsp;&nbsp;● I used [anymal_b]
+####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment
 ### 3. Run
-####    &nbsp;&nbsp;&nbsp;&nbsp;● tele-operation using ROS topic publisher 
 <br><br>
-+ **reference github link**: [champ](https://github.com/chvmp/champ)
-+ **my editied version**: [anymal_b](https://drive.google.com/drive/folders/11nySEjjSm7MpKuuOReOjIEwBADCTAIYq?usp=sharing)
++ **reference github link**: [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
 
-<!--
-## 1. Prerequisites
-### ● LCM (>= 1.4.0)
-```
-$ git clone https://github.com/lcm-proj/lcm.git 
-$ mkdir build && cd build
-$ cmake.. && make
-$ sudo make install
-```
-### ● Boost (>= 1.5.4)
-you already had satisfied this through installing ROS
 
-### ● CMake (>= 2.8.3)
-you already had satisfied this through installing ROS
-
-### ● unitree_legged_sdk
-+ LCM, Boost, CMake must be installed before installing this
-```
-$ git clone https://github.com/unitreerobotics/unitree_legged_sdk.git
-$ cd unitree_legged_sdk && mkdir build && cd build
-$ cmake ../ && make
-```
-
-### ● aliengo_sdk
-+ LCM, Boost, CMake must be installed before installing this
-```
-$ git clone https://github.com/unitreerobotics/aliengo_sdk.git
-$ cd aliengo_sdk && mkdir build && cd build
-$ cmake ../ && make
-```
-<br><br>
--->
 
 ## 1. Install
 + installing velodyne
