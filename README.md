@@ -37,6 +37,7 @@ $ cd .. && catkin build -$(nproc)
 refer [quad-legged](https://github.com/zinuok/quad-legged)
 
 + **installing LiDAR SLAM: LeGO-LOAM**
+you have to install **GTSAM ver. 4.0.3**. Otherwise, it could produce some error
 ```
 $ wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.3.zip
 $ cd unzip gtsam.zip
@@ -51,6 +52,17 @@ $ git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git
 $ cd .. && catkin build -$(nproc)
 $ source ./devel/setup.bash
 ```
+**< Trouble shooting >**
++ removing GTSAM <br>
+GTSAM is not deleted in the normal way
+```
+$ cd <your GTSAM build dir> && xargs rm -rf < install_manifest.txt
+``` 
++ [mapOptmization-7] process has died
+refer [here]()
+```
+```
+
 <br><br>
 
 ## 2. Applying Model
