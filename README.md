@@ -51,25 +51,12 @@ $ git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git
 $ cd .. && catkin build -$(nproc)
 $ source ./devel/setup.bash
 ```
-
+<br><br>
 
 ## 2. Applying Model
-#### ● Actually, I used anymal_b_config model only.
+#### ● Actually
 <br><br>
 
 ## 3. Run
-+ please refer my [gazebo.launch](https://github.com/zinuok/quadlegs/blob/main/gazebo.launch)
-+ following topic is used: '/cmd_vel', which is a velocity of robot body
-```
-$ roslaunch anymal_b_config gazebo.launch # load anymal_b robot model and world
-# use below format
-$ rostopic pub /cmd_vel geometry_msgs/Twist "linear:
-  x: 5.0
-  y: 0.0
-  z: 0.0
-angular:
-  x: 0.0
-  y: 0.0
-  z: 0.0"
-```
++ please r
 
