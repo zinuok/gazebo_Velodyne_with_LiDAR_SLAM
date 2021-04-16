@@ -47,18 +47,24 @@ $ cmake ..
 $ sudo make install
 ```
 ```
+$ sudo apt install -y libparmetis-dev
 $ cd <your_ws>/src
 $ git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git
 $ cd .. && catkin build -$(nproc)
 $ source ./devel/setup.bash
 ```
 **< Trouble shooting >**
-+ removing GTSAM <br>
-GTSAM is not deleted in the normal way
++ **removing GTSAM** <br>
+from [here](https://github.com/borglab/gtsam/issues/562#issuecomment-721899131). 
+GTSAM is not deleted in the normal way.
 ```
 $ cd <your GTSAM build dir> && xargs rm -rf < install_manifest.txt
 ``` 
-+ [mapOptmization-7] process has died
++ **[imageProjection-4] process has died** <br>
+refer [here]
+```
+```
++ **[mapOptmization-7] process has died** <br>
 refer [here]()
 ```
 ```
