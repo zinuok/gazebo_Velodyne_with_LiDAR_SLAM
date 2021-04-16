@@ -18,7 +18,7 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● robot model: champ-anymal_b
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: LeGO-LOAM
 ### 2. Applying Model
-####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment
+####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment to the robot model
 ### 3. Run
 <br><br>
 + **reference github link**: [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
@@ -26,20 +26,30 @@
 
 
 ## 1. Install
-+ installing velodyne
++ installing Velodyne
 ```
 $ cd <your_ws>/src
 $ git clone https://bitbucket.org/DataspeedInc/velodyne_simulator.git
 $ cd .. && catkin build -$(nproc)
 ```
 
-+ installing robot models
++ installing robot model
+refer [quad-legged](https://github.com/zinuok/quad-legged)
+
++ installing LiDAR SLAM: LeGO-LOAM
 ```
-$ cd && $ git clone https://github.com/chvmp/robots.git
-$ cd robots && ./install_deescriptions
-$ mv robots/configs/<your_model>_config <your_ws>/src/champ/
-$ mv robots/descriptions/<your_model>_description <your_ws>/src/champ/
-$ cd <your_ws> && catkin_build -j8
+$ wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.3.zip
+$ cd unzip gtsam.zip
+$ cd ~/Downloads/gtsam-4.0.3/
+$ mkdir build && cd build
+$ cmake ..
+$ sudo make install
+```
+```
+$ cd <your_ws>/src
+$ git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git
+$ cd .. && catkin build -$(nproc)
+$ source ./devel/setup.bash
 ```
 
 
