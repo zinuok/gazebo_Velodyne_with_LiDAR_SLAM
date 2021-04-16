@@ -36,7 +36,7 @@ $ cd .. && catkin build -$(nproc)
 + **installing robot model** <br>
 refer [quad-legged](https://github.com/zinuok/quad-legged)
 
-+ **installing LiDAR SLAM: LeGO-LOAM**
++ **installing LiDAR SLAM: LeGO-LOAM** <br>
 you have to install **GTSAM ver. 4.0.3**. Otherwise, it could produce some error
 ```
 $ wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.3.zip
