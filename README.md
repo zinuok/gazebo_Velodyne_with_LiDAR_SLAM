@@ -1,6 +1,6 @@
 ***
 # Velodyne-gazebo
-
++ velodyne: [link](https://bitbucket.org/DataspeedInc/velodyne_simulator/src/master/)
 ***
 <br>
 
@@ -56,14 +56,11 @@ $ cmake ../ && make
 -->
 
 ## 1. Install
-+ installing champ (controller for quad-legs robot)
++ installing velodyne
 ```
-$ sudo apt install -y python-rosdep
 $ cd <your_ws>/src
-$ git clone --recursive https://github.com/chvmp/champ
-$ git clone https://github.com/chvmp/champ_teleop
-$ cd ..
-$ rosdep install --from-paths src --ignore-src -r -y
+$ git clone https://bitbucket.org/DataspeedInc/velodyne_simulator.git
+$ cd .. && catkin build -$(nproc)
 ```
 
 + installing robot models
