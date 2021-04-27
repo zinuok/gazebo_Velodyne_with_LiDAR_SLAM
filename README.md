@@ -16,7 +16,7 @@
 ### 1. Install
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR sensor: Velodyne
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● robot model: champ-anymal_b
-####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: LeGO-LOAM
+####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: 1) LeGO-LOAM  2) LIO-SAM
 ### 2. Applying Model
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment to the robot model
 ### 3. Run
@@ -36,7 +36,8 @@ $ cd .. && catkin build -$(nproc)
 + **installing robot model** <br>
 refer [quad-legged](https://github.com/zinuok/quad-legged)
 
-+ **installing LiDAR SLAM: LeGO-LOAM** <br>
++ **installing LiDAR-based SLAM** 
++ **1) LeGO-LOAM** <br>
 you have to install **GTSAM ver. 4.0.3**. Otherwise, it could produce some error
 ```
 $ wget -O ~/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.3.zip
@@ -58,7 +59,7 @@ $ source ./devel/setup.bash
 from [here](https://github.com/borglab/gtsam/issues/562#issuecomment-721899131). 
 GTSAM is not deleted in the normal way.
 ```
-$ cd <your GTSAM build dir> && xargs rm -rf < install_manifest.txt
+$ cd <your GTSAM build dir> && sudo xargs rm -rf < install_manifest.txt
 ``` 
 + **[imageProjection-4] process has died** <br>
 refer [here]
@@ -67,6 +68,23 @@ refer [here]
 + **[mapOptmization-7] process has died** <br>
 refer [here]()
 ```
+```
+
++ **2) LIO-SAM** <br>
+from [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM#prepare-lidar-data)
+++ dd
+```
+$ sudo apt install -y ros-melodic-navigation
+$ sudo apt install -y ros-melodic-robot-localization
+$ sudo apt install -y ros-melodic-robot-state-publisher
+
+# GTSAM ver. 4.0.2
+$ wget -O ~/<your_ws>/gtsam.zip https://github.com/borglab/gtsam/archive/4.0.2.zip
+$ cd ~/<your_ws> && unzip gtsam.zip
+$ cd ~/<your_ws>/gtsam-4.0.2/
+$ mkdir build && cd build
+$ cmake -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF ..
+$ sudo make install -j $(nproc)
 ```
 
 <br><br>
