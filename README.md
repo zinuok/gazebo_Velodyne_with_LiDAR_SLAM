@@ -72,7 +72,7 @@ refer [here]()
 
 + **2) LIO-SAM** <br>
 from [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM#prepare-lidar-data)
-++ dd
+  + install pre-requirities
 ```
 $ sudo apt install -y ros-melodic-navigation
 $ sudo apt install -y ros-melodic-robot-localization
@@ -85,6 +85,13 @@ $ cd ~/<your_ws>/gtsam-4.0.2/
 $ mkdir build && cd build
 $ cmake -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF ..
 $ sudo make install -j $(nproc)
+```
+  + install LIO-SAM
+```
+$ cd <your_ws>/src
+$ git clone https://github.com/TixiaoShan/LIO-SAM.git
+$ cd .. && catkin build -$(nproc)
+$ source ./devel/setup.bash
 ```
 
 <br><br>
