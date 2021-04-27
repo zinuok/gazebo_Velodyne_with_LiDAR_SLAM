@@ -90,7 +90,7 @@ install LIO-SAM
 ```
 $ cd <your_ws>/src
 $ git clone https://github.com/TixiaoShan/LIO-SAM.git
-$ cd .. && catkin build -$(nproc)
+$ cd .. && catkin build -j $(nproc)
 $ source ./devel/setup.bash
 ```
 
