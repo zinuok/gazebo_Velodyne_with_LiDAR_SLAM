@@ -1,6 +1,10 @@
 ***
 # Velodyne-gazebo
 ***
+**< reference github link >**
++ [Velodyne](https://bitbucket.org/DataspeedInc/velodyne_simulator/src/master/)
++ [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
++ [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM#prepare-lidar-data)
 <br>
 
 # Index
@@ -22,10 +26,7 @@
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment to the robot model
 ### 3. Run
 
-**< reference github link >**
-+ [Velodyne](https://bitbucket.org/DataspeedInc/velodyne_simulator/src/master/)
-+ [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
-+ [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM#prepare-lidar-data)
+
 
 
 
