@@ -16,12 +16,16 @@
 ### 1. Install
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR sensor: Velodyne
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● robot model: champ-anymal_b
-####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: 1) LeGO-LOAM  2) LIO-SAM
+####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: 1) LeGO-LOAM  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) LIO-SAM
 ### 2. Applying Model
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment to the robot model
 ### 3. Run
 <br><br>
-+ **reference github link**: [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
++ **reference github link**
++ velodyne: [link](https://bitbucket.org/DataspeedInc/velodyne_simulator/src/master/)
++ [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
++ [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM#prepare-lidar-data)
 
 
 
