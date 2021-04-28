@@ -16,8 +16,9 @@
 ### 1. Install
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR sensor: Velodyne
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● robot model: champ-anymal_b
-####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: 1) LeGO-LOAM  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) LIO-SAM
+####    &nbsp;&nbsp;&nbsp;&nbsp;● LiDAR SLAM: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  1) LeGO-LOAM  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2) LIO-SAM
 ### 2. Applying Model
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment to the robot model
 ### 3. Run
