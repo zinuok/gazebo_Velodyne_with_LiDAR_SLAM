@@ -66,14 +66,7 @@ GTSAM is not deleted in the normal way.
 ```
 $ cd <your GTSAM build dir> && sudo xargs rm -rf < install_manifest.txt
 ``` 
-+ **[imageProjection-4] process has died** <br>
-refer [here]
-```
-```
-+ **[mapOptmization-7] process has died** <br>
-refer [here]()
-```
-```
+
 
 + **2) LIO-SAM** <br>
 install pre-requirities
@@ -98,6 +91,13 @@ $ git clone https://github.com/TixiaoShan/LIO-SAM.git
 $ cd .. && catkin build -j $(nproc)
 $ source ./devel/setup.bash
 ```
+
+**< Trouble shooting >**
++ **[imageProjection-4] process has died** <br>
+refer [here](). <br> 
+This is usually because the height and width of the sensor_msgs/PointCloud2 type, which is LiDAR data, are reversed.
+For example, to use LIO-SAM, the 'height=1' condition must be satisfied. Check it and if it's the opposite, make a ROS node and reverse it.
+
 
 <br><br>
 
