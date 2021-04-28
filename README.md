@@ -67,6 +67,7 @@ GTSAM is not deleted in the normal way.
 $ cd <your GTSAM build dir> && sudo xargs rm -rf < install_manifest.txt
 ``` 
 
+<br><br>
 
 + **2) LIO-SAM** <br>
 install pre-requirities
