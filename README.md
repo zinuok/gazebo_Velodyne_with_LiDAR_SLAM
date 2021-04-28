@@ -21,7 +21,7 @@
 ### 2. Applying Model
 ####    &nbsp;&nbsp;&nbsp;&nbsp;● sensor attachment to the robot model
 ### 3. Run
-<br>
+
 **< reference github link >**
 + [Velodyne](https://bitbucket.org/DataspeedInc/velodyne_simulator/src/master/)
 + [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
