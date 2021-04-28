@@ -90,7 +90,7 @@ $ mkdir build && cd build
 $ cmake -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF ..
 $ sudo make install -j $(nproc)
 ```
-<br>
+
 install LIO-SAM
 ```
 $ cd <your_ws>/src
