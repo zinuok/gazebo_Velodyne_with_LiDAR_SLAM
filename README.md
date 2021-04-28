@@ -76,7 +76,6 @@ refer [here]()
 ```
 
 + **2) LIO-SAM** <br>
-from [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM#prepare-lidar-data)
 install pre-requirities
 ```
 $ sudo apt install -y ros-melodic-navigation
@@ -91,6 +90,7 @@ $ mkdir build && cd build
 $ cmake -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF ..
 $ sudo make install -j $(nproc)
 ```
+<br>
 install LIO-SAM
 ```
 $ cd <your_ws>/src
@@ -106,5 +106,7 @@ $ source ./devel/setup.bash
 <br><br>
 
 ## 3. Run
-+ please r
+```
+$ roslaunch lio_sam run.launch
+```
 
