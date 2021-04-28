@@ -103,7 +103,8 @@ For example, to use LIO-SAM, the 'height=1' condition must be satisfied. Check i
 <br><br>
 
 ## 2. Applying Model
-#### ● Actually
+#### ● This is done if you use [my edited version](https://github.com/zinuok/quad-legged) as above install descriptions.
+#### ● LiDAR + IMU are loaded with the robot model, for running LIO-SAM.
 <br><br>
 
 ## 3. Run
